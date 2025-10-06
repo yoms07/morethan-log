@@ -20,7 +20,6 @@ export default async function handler(
     } else {
       const posts = filterPosts(await getPosts(), {
         acceptStatus: ["Public"],
-        acceptType: ["Post"],
       })
       const revalidateRequests = posts.map((row) =>
         res.revalidate(`/${row.slug}`)
