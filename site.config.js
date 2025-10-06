@@ -1,31 +1,40 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "morethanmin",
-    image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "frontend developer",
-    bio: "I develop everything using node.",
-    email: "morethanmin.dev@gmail.com",
-    linkedin: "morethanmin",
-    github: "morethanmin",
+    name: "Jason Stanley Yoman",
+    image: "/avatar.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    role: "Your Full Stack Web 3 Developer",
+    bio: "Let's build the future of DeFi together.",
+    email: "jasonstanleyyoman@gmail.com",
+    linkedin: "jasonstanleyyoman",
+    github: "yoms07",
     instagram: "",
   },
   projects: [
     {
-      name: `morethan-log`,
-      href: "https://github.com/morethanmin/morethan-log",
+      name: `Wraffle (WIP)`,
+      href: "https://raffle-fe-sand.vercel.app/browse",
     },
+    {
+      name: "Web3Tools (WIP)",
+      href: "https://web3tools.dev",
+    },
+    {
+      name: "Yapp",
+      href: "https://yapp.ink",
+    },
+
   ],
   // blog setting (required)
   blog: {
-    title: "morethan-log",
-    description: "welcome to morethan-log!",
+    title: "Jason's Personal Blog",
+    description: "welcome to Jason's Personal Blog!",
     scheme: "dark", // 'light' | 'dark' | 'system'
   },
 
   // CONFIG configration (required)
   link: "https://morethan-log.vercel.app",
-  since: 2022, // If leave this empty, current year will be used.
+  since: 2024, // If leave this empty, current year will be used.
   lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
 
@@ -69,7 +78,7 @@ const CONFIG = {
     },
   },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
-  revalidateTime: 21600 * 7, // revalidate time for [slug], index
+  revalidateTime: 21600 * 1, // revalidate time for [slug], index
 }
 
 module.exports = { CONFIG }
