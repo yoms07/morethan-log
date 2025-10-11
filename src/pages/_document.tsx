@@ -1,10 +1,12 @@
 import Document, { Html, Head, Main, NextScript } from "next/document"
 import { CONFIG } from "site.config"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang={CONFIG.lang}>
+        <SpeedInsights />
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <link
