@@ -28,8 +28,11 @@ export function filterPosts(
     })
     // filter status
     .filter((post) => {
-      const postStatus = post.status[0]
-      return acceptStatus.includes(postStatus)
+      return (
+        post.status &&
+        post.status.length > 0 &&
+        acceptStatus.includes(post.status[0])
+      )
     })
     // filter type
     .filter((post) => {
