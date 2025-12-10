@@ -6,7 +6,7 @@ const CONFIG = {
     role: "Your Full Stack Web 3 Developer",
     bio: "Let's build the future of DeFi together.",
     email: "jasonstanleyyoman@gmail.com",
-    linkedin: "jasonstanleyyoman",
+    linkedin: "jason-stanley-yoman",
     github: "yoms07",
     instagram: "",
   },
